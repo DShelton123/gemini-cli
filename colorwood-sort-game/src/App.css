@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.game-board {
+  display: flex;
+  gap: 20px;
+}
+
+.tube {
+  width: 50px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tube.selected {
+  border-color: #007bff;
+}
+
+.liquids-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.liquid {
+  height: 50px;
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.liquid.moveable.selected {
+  transform: scale(1.2);
+}
+
+.win-message {
+  margin-top: 20px;
+  font-size: 24px;
+  color: green;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
